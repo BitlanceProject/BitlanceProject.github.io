@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+.splashPage {
+    min-height: 420px;
+    background-color: #333333;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.splashPage .bgLayer {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(31, 39, 45, 0.85);
+}
+
+.splashPage .bgVideo {
+    position: fixed;
+    background-image: url(../img/bg_video.jpg);
+}
+
+.splashPage .logo {
+    background-image: url(../img/logo-01.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 380px;
+    padding: 130px 0 0 0;
+    margin: 30px auto 50px auto;
+}
+
+.splashPage .tagline {
+    display: block;
+	padding-top: 30px;
+	border-top: 2px solid #666;
+	color: #666;
+	font-size: 2.1rem;
+    text-align: center;
+}
+
+.splashPage .splitSection {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.splashPage .logoSection {
+    left: 0;
+    right: 50%;
+    opacity: 1;
+    z-index: 1;
+    /*z-index: -1;*/
+    
+    transition: 200ms opacity;
+}
+.splashPage .logoSection.scrolled {
+    opacity: 0;
+}
+
+.splashPage .full {
+    left: 0;
+    right: 0;
+}
+
+.splashPage .devStatus {
+	float: left;
+    margin: 40px 0 0 30px;
+}
+
+.splashPage .features {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    display: flex;
+    background-image: url(../img/featuresBg.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.splashPage .features .contentWrapper {
+    padding: 0;
+}
+
+.subSplashPage {    
+    background-image: url(../img/subSplash.png);
+    background-position: center top;
+    height: calc(100% - 230px);
+}
+.subSplashPage .page {
+    height: calc(100% - 100px);
+    background: none;
+    background-image: url(../img/subSplash_boxes.png);
+    background-position: center bottom;
+    background-repeat: repeat-y;
+}
+.subSplashPage .page:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    min-height: 20px;
+    position: absolute;
+    bottom: 80px;
+    background: none;
+    background-image: url(../img/subSplash_boxes_bottom.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.splashPage .features {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.splashPage .features .contentWrapper {
+    text-align: center;
+}
+.subSplashPage .pageColumn,
+.splashPage .features .pageColumn {
+    color: #ffffff;
+    width: 290px;
+    margin-left: 15px;
+    float: left;
+    padding-top: 25px;
+}
+.subSplashPage .pageColumn:first-child,
+.splashPage .features .pageColumn:first-child {
+    margin-left: 0;
+}
+.subSplashPage .pageColumn {
+    width: 210px;
+    padding: 40px;
+    font-size: 18px;
+}
+.subSplashPage .pageColumn p {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+.subSplashPage .pageColumn h1 {
+    font-weight: normal;
+    text-align: left;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.subSplashPage .contentWrapper:after {
+    clear: both;
+}
+
+@media screen and (max-width: 980px) {
+    .splashPage .devStatus {
+        display: none;
+    }
+} /*980*/

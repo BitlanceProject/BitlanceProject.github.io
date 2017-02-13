@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.abutHirePage {
+    background-color: #E0D8CD;
+    background-image: url(../img/hire-01.png);
+}
+.abutWorkPage {
+    background-color: #8AABBC;
+    background-image: url(../img/work-01.png);
+}
+.abutInvestPage {
+    background-color: #435C87;
+    background-image: url(../img/invest-01.png);
+}
+
+.page .supportedProjects {
+    margin-top: 40px;
+}
+.page .supportedProjects .link.icon {
+    margin-right: 80px;
+    float: left;
+}
+
+.page .link.xeth {
+	background-image:url(../img/xeth-01.png);
+	width: 243px;
+}
+
+.page .link.bitprofile {
+	background-image:url(../img/bitprofile-01.png);
+	width: 245px;
+}
