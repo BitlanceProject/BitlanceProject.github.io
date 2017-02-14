@@ -347,6 +347,8 @@ input[type=password]:-ms-input-placeholder, input[type=text]:-ms-input-placehold
 .header .subscribeBox .btn {
     width: 100px;
     float: left;
+    padding: 0;
+    border: 0;
 }
 .header .subscribeBox .txtError {
 	font-size: 1.1rem;

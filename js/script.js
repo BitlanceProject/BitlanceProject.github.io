@@ -22,8 +22,6 @@ function stickyTop() {
     $logo.css("margin-top",$window.scrollTop()/2);
 }
 
-
-
 $(document).ready(function(){
     stickyTop();
     initMenuRef("#header .headLogo", "#splashPage");
