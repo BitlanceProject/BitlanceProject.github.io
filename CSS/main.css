@@ -350,7 +350,22 @@ input[type=password]:-ms-input-placeholder, input[type=text]:-ms-input-placehold
     padding: 0;
     border: 0;
 }
-.header .subscribeBox .txtError {
+
+.header .subscribeBox .msgBox{
+    clear:both;
+    color:white;
+    padding-top:10px;
+    max-width: 370px;
+    line-height:20px;
+
+}
+
+.header .subscribeBox.error .msgBox{
+    color:red;
+}
+
+
+.header .subscribeBox .txtError{
 	font-size: 1.1rem;
 	line-height: 20px;
 	margin: -30px 0 10px 0;
@@ -371,6 +386,8 @@ input[type=password]:-ms-input-placeholder, input[type=text]:-ms-input-placehold
     border-radius: 5px;
 	-moz-radius: 5px;
 }
+
+
 
 .pageTag {
     position: absolute;
