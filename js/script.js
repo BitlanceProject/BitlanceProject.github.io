@@ -50,6 +50,7 @@ function initSubscribeForm(){
             box.addClass("error");
         }else{
             box.removeClass("error");
+            input.attr("disabled","disabled");
             $.ajax({
                 type: "GET",
                 url: url,
@@ -58,8 +59,11 @@ function initSubscribeForm(){
                 dataType: "jsonp",
                 jsonp: "c",
                 contentType: "application/json; charset=utf-8",
-                error: function(error){},
+                error: function(error){
+                    input.removeAttr("disabled");
+                },
                 success: function(data){
+                    input.removeAttr("disabled");
                     if (data.result != "success") {
                         var message;
 
